@@ -1,2 +1,2 @@
-# my-proflie
+# my-profile
 
