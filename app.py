@@ -1,12 +1,12 @@
 import streamlit as st
 
-(Header)
+# (Header)
 st.title("ยินดีต้อนรับสู่โปรไฟล์ของฉัน")
 st.write("นี่คือเว็บแอปพลิเคชั่นแรกในชีวิตของฉัน เขียนด้วยภาษา python")
 
 st.divider()
 
-(Profile_Info)
+# (Profile_Info)
 st.header("ข้อมูลส่วนตัว")
 st.write("**ชื่อ-นามสกุล** : นางสาว ธีชญา แก้วมาเรือน")
 st.write("**ชั้น ม.4/5** เลขที่ 40")
