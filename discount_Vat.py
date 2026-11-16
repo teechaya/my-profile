@@ -6,7 +6,7 @@ discount = jb.number_input("เปอร์เซ็นส่วนลด (%):",
 r_discount = price * (discount/100)
 dis_price = price - r_discount
 vat = dis_price * 0.07
-net_price = price - (vat + r_discount)
+net_price = dis_price - vat
 
 jb.write(f"• ส่วนลด ({discount}%) : -**{r_discount:.2f}** บาท")
 jb.write(f"• ราคาหลังส่วนลด: {dis_price:.2f} บาท")
