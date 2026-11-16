@@ -2,10 +2,11 @@ import streamlit as jb
 jb.title("แอปพลิเคชั่นคำนวณราคาสินค้า")
 price = jb.number_input("กรอกราคาสินค้า (บาท):", min_value=0.0 , value=0.0)
 discount = jb.number_input("เปอร์เซ็นส่วนลด (%):", min_value=0.0 , value=0.0)
+
 r_discount = price * (discount/100)
+dis_price = price - r_discount
 vat = dis_price * 0.07
 net_price = price - (vat + r_discount)
-dis_price = price - r_discount
 
 jb.write(f"• ส่วนลด ({discount}%) : **{r_discount:.2f}** บาท")
 jb.write(f"• ราคาหลังส่วนลด: {dis_price:.2f} บาท")
