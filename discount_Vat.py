@@ -6,7 +6,7 @@ r_discount = price * (discount/100)
 vat = price * 0.07
 net_price = price - (vat + r_discount)
 
-jb.write(f"• ส่วนลด : **{discout:.2f}** บาท")
+jb.write(f"• ส่วนลด ({discount}%) : **{r_discount:.2f}** บาท")
 jb.write(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 jb.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 jb.divider()
