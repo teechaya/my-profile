@@ -3,7 +3,7 @@ jb.title("แอปพลิเคชั่นคำนวณราคาสิ�
 price = jb.number_input("กรอกราคาสินค้า (บาท):", min_value=0.0 , value=0.0)
 discount = jb.number_input("เปอร์เซ็นส่วนลด (%):", min_value=0.0 , value=0.0)
 r_discount = price * (discount/100)
-vat = r_discount * 0.07
+vat = dis_price * 0.07
 net_price = price - (vat + r_discount)
 dis_price = price - r_discount
 
