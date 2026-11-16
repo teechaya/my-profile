@@ -8,8 +8,8 @@ net_price = price - (vat + r_discount)
 dis_price = price - r_discount
 
 jb.write(f"• ส่วนลด ({discount}%) : **{r_discount:.2f}** บาท")
-jb.write(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 jb.write(f"• ราคาหลังส่วนลด: {dis_price:.2f} บาท")
+jb.write(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 jb.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 jb.divider()
 jb.write("นางสาวธีชญา แก้วมาเรือน เลขที่40  ม.4/5")
