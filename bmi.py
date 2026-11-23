@@ -1,5 +1,5 @@
 import streamlit as sd
-sd.markdown("# :pink[💪 โปรแกรมคำนวณค่าดัชนีมวลกาย (BMI) ️‍🔥]")
+sd.markdown("# :pink[💪 โปรแกรมคำนวณค่าดัชนีมวลกาย BMI ️‍🔥]")
 sd.write("กรอกข้อมูลน้ำหนักส่วนสูงของคุณ เพื่อเช็คสุขภาพเบื้องต้น")
 weight = sd.number_input("กรอกน้ำหนัก (กิโลกรัม) : ", min_value = 1.0, value=1.0)
 height_cm = sd.number_input("กรอกส่วนสูง (cm) : ", min_value = 1.0, value=1.0)
@@ -11,7 +11,7 @@ if sd.button("คำนวณค่า BMI "):
    sd.write("---")
    sd.header("ค่า bmi ของคุณคือ: **{bmi:.2f}**")
 
-if bmi > 18.5:
+if bmi < 18.5:
   sd.warning("⚠️ คุณน้ำหนักน้อยกว่าเกณฑ์!! (ผอม)")
 elif 18.5 <= bmi < 23.0:
   sd.success("💪 คุณมีน้ำหนักในเกณฑ์ปกติ (สมส่วน)")
