@@ -4,7 +4,7 @@ sd.write("กรอกข้อมูลน้ำหนักส่วนสู�
 weight = sd.number_input("กรอกน้ำหนัก (กิโลกรัม) : ", min_value = 1.0, value=1.0)
 height_cm = sd.number_input("กรอกส่วนสูง (cm) : ", min_value = 1.0, value=1.0)
 
-if sd.button("คำนวณค่า BMI ")
+if sd.button("คำนวณค่า BMI "):
    height_m = height_cm / 100
    bmi = weight / (height ** 2)
 
