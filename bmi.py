@@ -1,5 +1,5 @@
 import streamlit as sd
-sd.markdown("# :pink[💪 โปรแกรมคำนวณค่าดัชนีมวลกาย BMI ️‍🔥]")
+sd.markdown("# :pink[💪โปรแกรมคำนวณค่าดัชนีมวลกาย BMI]")
 sd.write("กรอกข้อมูลน้ำหนักส่วนสูงของคุณ เพื่อเช็คสุขภาพเบื้องต้น")
 weight = sd.number_input("กรอกน้ำหนัก (กิโลกรัม) : ", min_value = 1.0, value=1.0)
 height_cm = sd.number_input("กรอกส่วนสูง (cm) : ", min_value = 1.0, value=1.0)
