@@ -6,7 +6,7 @@ height_cm = sd.number_input("กรอกส่วนสูง (cm) : ", min_val
  
 if sd.button("คำนวณค่า BMI "):
    height_m = height_cm / 100
-   bmi = weight / (height ** 2)
+   bmi = weight / (height_m ** 2)
 
    if bmi < 18.5:
      sd.warning("⚠️ คุณน้ำหนักน้อยกว่าเกณฑ์!! (ผอม)")
